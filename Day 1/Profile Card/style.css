@@ -1,0 +1,79 @@
+* {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #444;
+}
+.card {
+  width: 300px;
+  margin: 75px auto 0;
+  box-shadow: 0 3px 30px rgba(0, 0, 0, 0.14);
+  color: #444;
+  text-align: center;
+  font-size: 16px;
+  background-color: white;
+}
+.card .card-header {
+  position: relative;
+  height: 48px;
+}
+.card .card-header .profile-image {
+  width: 96px;
+  height: 96px;
+  border-radius: 100%;
+  position: absolute;
+  object-fit: cover;
+  object-position: top;
+  transform: translate(-50%, -50%);
+  border: 6px solid white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.card .card-body {
+  padding: 10px 40px;
+}
+.card .card-body .full-name {
+  font-size: large;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 10px 0 0;
+}
+/* .card .card-body .username {
+  font-size: smaller;
+  color: #777;
+  margin: 1px 0 0;
+} */
+.card .card-body .city {
+  margin: 10px 0 0;
+  font-size: medium;
+}
+.card .card-body .desc {
+  margin: 10px 0 0;
+  font-size: medium;
+}
+.card .card-footer {
+  padding: 15px 0;
+  border-top: 1px solid #e6e6e6;
+}
+.card .card-footer .social-icon {
+  font-size: medium;
+  margin: 0 7px;
+}
+
+.card .card-footer .social-icon.facebook {
+  color: blue;
+}
+.card .card-footer .social-icon.email {
+  color: rgb(255, 0, 76);
+}
+.card .card-footer .social-icon.github {
+  color: black;
+}
+.card .card-footer .social-icon.linkedin {
+  color: #0077b5;
+}
+.card .card-footer .social-icon.whatsapp {
+  color: rgb(35, 172, 35);
+}
