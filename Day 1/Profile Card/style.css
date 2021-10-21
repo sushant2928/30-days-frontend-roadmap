@@ -4,24 +4,28 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #444;
+  background-color: rgb(224, 224, 219);
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
 }
 .card {
-  width: 300px;
-  margin: 75px auto 0;
+  max-width: 20rem;
   box-shadow: 0 3px 30px rgba(0, 0, 0, 0.14);
   color: #444;
   text-align: center;
-  font-size: 16px;
+  font-size: large;
   background-color: white;
 }
 .card .card-header {
   position: relative;
-  height: 48px;
+  height: 3rem;
 }
 .card .card-header .profile-image {
-  width: 96px;
-  height: 96px;
+  width: 6rem;
+  height: 6rem;
   border-radius: 100%;
   position: absolute;
   object-fit: cover;
@@ -32,13 +36,13 @@ body {
 }
 
 .card .card-body {
-  padding: 10px 40px;
+  padding: 1.5rem 2.5rem;
 }
 .card .card-body .full-name {
   font-size: large;
-  font-weight: 600;
+  font-weight: bold;
   text-transform: uppercase;
-  margin: 10px 0 0;
+  margin: 0.5rem 0 0;
 }
 /* .card .card-body .username {
   font-size: smaller;
@@ -46,20 +50,20 @@ body {
   margin: 1px 0 0;
 } */
 .card .card-body .city {
-  margin: 10px 0 0;
+  margin: 0.5rem 0 0;
   font-size: medium;
 }
 .card .card-body .desc {
-  margin: 10px 0 0;
+  margin: 0.5rem 0 0;
   font-size: medium;
 }
 .card .card-footer {
-  padding: 15px 0;
+  padding: 1rem 0;
   border-top: 1px solid #e6e6e6;
 }
 .card .card-footer .social-icon {
   font-size: medium;
-  margin: 0 7px;
+  margin: 0 0.5rem;
 }
 
 .card .card-footer .social-icon.facebook {
