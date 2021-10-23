@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  /* transition: ease all 500ms; */
+}
+.nav-container,
+.newsletter {
+  display: flex;
+  background-color: rgb(50, 60, 65);
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+  border-bottom: 3px solid rgb(255, 94, 0);
+  color: white;
+  text-align: center;
+}
+.nav-container h1,
+.newsletter h2 {
+  font-weight: 500;
+  width: 100%;
+}
+.nav-container h1 span {
+  color: rgb(255, 94, 0);
+}
+nav,
+main .newsletter form {
+  width: 100vw;
+}
+.nav-container nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav-container nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+.nav-container nav ul li a.active {
+  color: rgb(255, 94, 0);
+}
+main .showcase {
+  background-image: url("https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=872&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+main .showcase .container {
+  background-color: rgb(0, 0, 0, 0.65);
+  color: white;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+main .showcase .container h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+main .showcase .container p {
+  padding: 1.5rem;
+  width: 80%;
+}
+main .newsletter {
+  border: none;
+}
+main .newsletter h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+main .newsletter form input {
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+}
+main .newsletter form button {
+  background-color: rgb(255, 94, 0);
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0.5rem;
+}
+main .boxes {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  padding: 2rem;
+}
+main .boxes .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+main .boxes .box img {
+  width: 6rem;
+  height: 6rem;
+}
+main .boxes .box h3 {
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 1rem;
+}
+main .boxes .box p {
+  width: 80%;
+  font-size: 0.9rem;
+}
+footer {
+  background-color: rgb(255, 94, 0);
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  header .nav-container h1 {
+    font-size: 1.25rem;
+  }
+  main .showcase .container h2 {
+    font-size: 1.5rem;
+  }
+  main .showcase .container p {
+    font-size: 0.9rem;
+  }
+
+  main .newsletter {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .newsletter h2,
+  main .newsletter form {
+    padding: 0.5rem;
+  }
+  footer {
+    font-size: small;
+    height: 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .nav-container {
+    flex-direction: column;
+    padding: 0.5;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-container h1,
+  .nav-container nav ul {
+    padding: 0.5rem;
+  }
+  .nav-container nav ul li {
+    padding: 1rem;
+  }
+  main .boxes {
+    flex-direction: column;
+  }
+}
