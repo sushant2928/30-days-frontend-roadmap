@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+.left {
+  flex-basis: 40%;
+  background-color: #0d0f12;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7rem;
+  padding-bottom: 1.5rem;
+}
+.left .logo {
+  text-align: center;
+}
+.left .logo img {
+  width: 85%;
+}
+.left form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-top: 2rem;
+}
+.left form label {
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 0.25rem;
+}
+.left form input {
+  padding: 0.75rem 1rem;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid gray;
+  color: white;
+  border-radius: 3px;
+}
+.left form input:focus {
+  border-color: white;
+}
+.left form button {
+  background-color: #0074ab;
+  padding: 0.6rem 1rem;
+  border: 0;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 1.5rem 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.left form button:hover {
+  background-color: #006999;
+}
+.left .links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  border-bottom: 1px solid rgba(138, 153, 168, 0.25);
+  padding: 1rem 0;
+  text-align: center;
+}
+.left .links a {
+  padding: 0.5rem;
+  color: #0074ab;
+  text-decoration: none;
+  font-weight: 500;
+}
+#create-account-link {
+  text-decoration: none;
+  border: 0;
+  border-radius: 3px;
+  text-align: center;
+  color: hsla(0, 0%, 100%, 0.95);
+  background-color: rgba(138, 153, 168, 0.25);
+  padding: 0.75rem 0;
+  margin: 2rem 0;
+  width: 60%;
+  font-weight: 500;
+}
+#create-account-link:hover {
+  background-color: rgba(138, 153, 168, 0.3);
+}
+.left footer {
+  color: hsla(0, 0%, 100%, 0.7);
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+.left footer a {
+  color: hsla(0, 0%, 100%, 0.7);
+}
+.left footer a:hover {
+  color: #0074ab;
+}
+.right {
+  background-image: url("https://image.ibb.co/cO9Lxq/login-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.right h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.right a {
+  text-decoration: none;
+  color: white;
+  margin: 1rem;
+  border: 1px solid white;
+  padding: 0.75rem 1rem;
+  border-radius: 3px;
+}
+@media (max-width: 1359px) {
+  .left,
+  .right {
+    flex-basis: 50%;
+  }
+  .left form,
+  .left .links,
+  #create-account-link {
+    width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  .left {
+    flex-basis: 100%;
+  }
+  .left form,
+  .left .links,
+  #create-account-link {
+    width: 80%;
+  }
+  .right {
+    display: none;
+  }
+}
